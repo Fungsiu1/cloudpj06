@@ -1,0 +1,20 @@
+{
+  "name": "eugeneho1",
+  "description": "A very simple Node.js app",
+  "author": "eugeneho1 <eugeneho1218@gmail.com>",
+  "version": "1.0.0",
+  "dependencies": {
+    "cookie-session": "latest",
+    "mongodb": "3.1",
+    "formidable": "latest",
+    "mongoose": "^4.10.8",
+    "express": "*",
+    "nodemon": "^1.19.4",
+    "ejs": "*",
+    "body-parser": "^1.19.0"
+  },
+  "engine": "node >= 0.10.0",
+  "scripts": {
+    "start": "node server"
+  }
+}

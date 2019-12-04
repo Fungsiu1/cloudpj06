@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title>Photos</title>
+    </head>
+    <body>
+        <H2>Showing <%= rest.length %> document(s)</H2>
+        <ol>
+            <% for (i in rest) { %>
+
+                
+                    
+             <li> 
+                 <a href=/showdetails?_id=<%=rest[i]._id %> > 
+                <%=rest[i].name%> </li>
+            <% } %>
+        </ol>
+        <a href="/">Home</a>
+    </body>
+</html>

@@ -1,0 +1,36 @@
+<html>   
+    <head>
+        <title>Photos</title>
+    </head>
+   
+    <body>
+            <% for (i in rest) { %>
+
+        <H2>Showing <%= rest[i].name%> document(s)</H2>
+        <ol>
+            
+            
+                <form action="showdetails" method="get" enctype="multipart/form-data">
+
+                <br>Restaurant_ID:<%=rest[i]._id%></br>
+                <br>Name:<%=rest[i].name%></br>
+                <br>Borough:<%=rest[i].borough%></br>
+                <br>cuisine:<%=rest[i].cuisine%></br>
+                <br>street:<%=rest[i].street%></br>
+                <br>building:<%=rest[i].building%></br>
+                <br>zipcode:<%=rest[i].zipcode%></br>
+                <br>coord_1:<%=rest[i].coord_1%></br>
+                <br>coord_2:<%=rest[i].coord_2%></br>
+                <br>score:<%=rest[i].score%></br>
+                <br>owner:<%=rest[i].owner%></br>
+                <br><img src="data:image/jpeg;base64,<%=rest[i].image%>"></br>
+                
+            <% } %>
+        </ol>
+    </form>
+        <a href='/delete?_id=<%=rest[i]._id%>'>Delete</a>
+        <a href="/edit?_id=<%=rest[i]._id%>">Edit</a>
+        <a href='/restaurant'>Back</a>
+    </body>
+
+</html>
