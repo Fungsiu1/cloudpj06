@@ -7,7 +7,7 @@
     "cookie-session": "latest",
     "mongodb": "3.1",
     "formidable": "latest",
-    "mongoose": "^4.10.8",
+    "mongoose": "^5.13.15",
     "express": "*",
     "nodemon": "^1.19.4",
     "ejs": "*",
